@@ -353,3 +353,75 @@ h3{
   color: purple;
   text-decoration: underline;
 }
+/*pie de pagina*/
+.footer {
+  background-color: #7e57c2;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.footer__contenido {
+  text-align: center;
+  color: var(--color-texto);
+}
+
+.footer__texto {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer__volver {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: purple;
+  text-decoration: underline;
+}
+/*pestañas tab*/
+.pestañas {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--color-texto);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+}
+
+.pestañas__menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pestañas__label {
+  padding: 10px 20px;
+  background-color: #ccc;
+  margin-right: 5px;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+  color: black;
+}
+
+.pestañas__label--activa {
+  background-color: #7e57c2;
+  color: white;
+}
+
+.pestañas__contenido {
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #f4f4f4;
+  margin-bottom: 10px;
+}
+
+.pestañas__volver {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: purple;
+  text-decoration: underline;
+}
