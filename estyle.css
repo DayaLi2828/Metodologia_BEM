@@ -425,3 +425,36 @@ h3{
   color: purple;
   text-decoration: underline;
 }
+/*selector de categorias*/
+.categorias {
+  width: 300px;
+  margin: 40px auto;
+  background-color: var(--color-texto);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+}
+
+.categorias__titulo {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000;
+  text-align: center;
+}
+
+.categorias__select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.categorias__volver {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: purple;
+  text-decoration: underline;
+}
