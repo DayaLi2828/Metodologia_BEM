@@ -5,28 +5,60 @@
 }
 :root{
   --color-cajas:#d7bde2 ;
+  --color-texto:#fff;
+  --color-titulo-caja:#7e57c2;
 }
 body{
-  background-color:antiquewhite;
+  background-color:rgb(29, 8, 52);
 }
 .header__titulo{
   font-size: 30px;
   padding: 20px;
   margin: 20px;
-  background-color: #bfadc794;
+  color:var(--color-titulo-caja);
+  background-color: var(--color-cajas);
   text-align: center;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px var(--color-texto);
 }
-.navegacion{
-  display: block;
-  padding: 20px;
+.nav__navegacion{
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
 }
+.nav__navegacion a{
+  display: inline-block;
+  text-align: center;
+  padding: 15px 50px;
+  background-color: #7e57c2;
+  color: var(--color-texto);
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.nav__navegacion a:hover{
+  background-color:var(--color-cajas);
+}
+
 .ejercicios{
   margin: 20px;
-  border: solid black 2px;
+  border: solid rgb(255, 255, 255) 5px;
   background-color:var(--color-cajas);
   padding: 30px;
   width: 98%; 
   height: 800px; 
- 
+  text-align: center;
+}
+/*estilos principales de la pagina*/
+/*ejercicio1*/
+.tarjeta{
+  background-color: #fff;
+  padding: 30px;
+  width: 40%;
+  height: auto; 
+  border-radius: 20px;
+}
+.tarjeta img{
+  margin-left: 40px;
 }
