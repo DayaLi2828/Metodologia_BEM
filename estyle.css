@@ -1,0 +1,32 @@
+*{
+  padding: 0%;
+  margin: auto;
+  box-sizing: border-box;
+}
+:root{
+  --color-cajas:#d7bde2 ;
+}
+body{
+  background-color:antiquewhite;
+}
+.header__titulo{
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #bfadc794;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.navegacion{
+  display: block;
+  padding: 20px;
+}
+.ejercicios{
+  margin: 20px;
+  border: solid black 2px;
+  background-color:var(--color-cajas);
+  padding: 30px;
+  width: 98%; 
+  height: 800px; 
+ 
+}
