@@ -79,13 +79,16 @@ p{
 } */
 
 .main__menu{
-  background-color:#1474858a ;
+  background-color: #1474858a;
   width: 30%;
   border-radius: 20px;
-  margin-bottom: 20px;/*volver*/
+  margin-bottom: 20px;
+  padding: 30px;
 }
 .main__titulo{
   padding: 20px;
+  text-align: left;
+  position: relative;
 }
 h3{
   text-align: left;
@@ -93,9 +96,260 @@ h3{
   margin-top: 18px;
   
 }
+
 .icono__casa{
   width: 20px;
 }
 .icono__maleta{
   width: 20px;
+}
+.icono__cohete{
+  width: 20px;
+}
+.icono__planeta{
+  width: 20px;
+}
+.icono__contacto{
+  width: 20px;
+}
+.icono__menu{
+  width: 20px;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+}
+.titulo__ejercicio2{
+  margin: 20px;
+}
+/*formulario contacto*/
+.formulario {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario__grupo {
+  margin-bottom: 15px;
+}
+
+.formulario__etiqueta {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formulario__input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario__boton {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formulario__boton:hover {
+  background-color: #45a049;
+}
+/*lista de tareas*/
+.tareas {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+}
+.ejercicio__titulo {
+  margin-bottom: 20px;
+
+}
+
+.tareas__titulo {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tareas__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tareas__item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tareas__checkbox {
+  margin-right: 10px;
+}
+
+.tareas__texto {
+  font-size: 16px;
+  flex-grow: 1;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.ejercicios .tareas {
+  margin: 0 auto;
+  width: 50%;
+  background-color: var(--color-texto); /* sigue siendo blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.tareas__titulo {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+/*galeria de imagenes*/
+.galeria {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--color-texto);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
+}
+.titulo__ejercicio{
+  margin-bottom: 20px;
+
+}
+.galeria__titulo {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.galeria__contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 15px;
+  
+}
+
+.galeria__imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+  
+}
+
+.galeria__imagen:hover {/*sirve para que cuando le ponga el cursor enzima se aumente la imagen*/
+  transform: scale(1.05);
+}
+/*alerta de notificacion*/
+.alerta {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.alerta__mensaje {
+  font-size: 16px;
+  color: #000;
+  margin: 0;
+}
+
+/* Modificadores */
+.alerta--info {
+  background-color: #d9edf7;
+  border-left: 6px solid #31708f;
+}
+
+.alerta--exito {
+  background-color: #dff0d8;
+  border-left: 6px solid #3c763d;
+}
+
+.alerta--advertencia {
+  background-color: #fcf8e3;
+  border-left: 6px solid #8a6d3b;
+}
+
+.alerta--error {
+  background-color: #f2dede;
+  border-left: 6px solid #a94442;
+}
+
+.alerta__volver {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: purple;
+  text-decoration: underline;
+}
+/*tabla de datos*/
+.tabla {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--color-texto);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabla__titulo {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.tabla__contenedor {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla__columna {
+  background-color: #7e57c2;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.tabla__fila--encabezado {
+  font-weight: bold;
+}
+
+.tabla__dato {
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: #000;
+}
+
+
+
+.tabla__volver {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: purple;
+  text-decoration: underline;
 }

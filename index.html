@@ -42,14 +42,14 @@
       </div>
 
       <div class="ejercicios" id="ejercicio2">
-        <h2>Ejercicio 2</h2>
+        <h2 class="titulo__ejercicio2">Ejercicio 2</h2>
         <div class="main__menu">
-          <h2 class="main__titulo">Menú de Navegación</h2>
+          <h2 class="main__titulo">Menú de Navegación <img src="imagen/lista.png" class="icono__menu"></h2>
           <h3><img src="imagen/casa (1).png" class="icono__casa"> Inicio</h3>
           <h3><img src="imagen/maleta.png" class="icono__maleta"> Trabajos</h3>
-          <h3>Proyectos</h3>
-          <h3>Servicios</h3>
-          <h3>Contactos</h3>
+          <h3><img src="imagen/lanzadera.png" class="icono__cohete"> Proyectos</h3>
+          <h3><img src="imagen/planeta-tierra (1).png" class="icono__planeta"> Servicios</h3>
+          <h3><img src="imagen/carta-de-amor.png" class="icono__contacto">Contactos</h3>
         </div>
         <a href="#volver">Volver</a>
 
@@ -57,30 +57,121 @@
 
       <div class="ejercicios" id="ejercicio3">
         <h2>Ejercicio 3</h2>
+          <form class="formulario">
+            <div class="formulario__grupo">
+              <label for="nombre" class="formulario__etiqueta">Nombre</label>
+              <input type="text" id="nombre" class="formulario__input" placeholder="Tu nombre">
+            </div>
+
+            <div class="formulario__grupo">
+              <label for="correo" class="formulario__etiqueta">Correo</label>
+              <input type="email" id="correo" class="formulario__input" placeholder="tucorreo@ejemplo.com">
+            </div>
+
+            <div class="formulario__grupo">
+              <label for="mensaje" class="formulario__etiqueta">Mensaje</label>
+              <textarea id="mensaje" class="formulario__input" placeholder="Escribe tu mensaje aquí"></textarea>
+            </div>
+
+            <button type="submit" class="formulario__boton">Enviar</button>
+          </form>
         <a href="#volver">Volver</a>
 
       </div>
 
       <div class="ejercicios" id="ejercicio4">
-        <h2>Ejercicio 4</h2>
-        <a href="#volver">Volver</a>
+  <h2 class="ejercicio__titulo">Ejercicio 4</h2>
+  <div class="tareas">
+    <h2 class="tareas__titulo">Lista de Tareas</h2>
+    <ul class="tareas__lista">
+      <li class="tareas__item">
+        <input type="checkbox" class="tareas__checkbox" id="tarea1">
+        <label for="tarea1" class="tareas__texto">Estudiar HTML</label>
+      </li>
+      <li class="tareas__item">
+        <input type="checkbox" class="tareas__checkbox" id="tarea2">
+        <label for="tarea2" class="tareas__texto">Practicar CSS</label>
+      </li>
 
-      </div>
+      
+      <li class="tareas__item">
+        <input type="checkbox" class="tareas__checkbox" id="tarea4">
+        <label for="tarea4" class="tareas__texto">Leer sobre BEM</label>
+      </li>
+
+      <li class="tareas__item">
+        <input type="checkbox" class="tareas__checkbox" id="tarea6">
+        <label for="tarea6" class="tareas__texto">Revisar diseño en Figma</label>
+      </li>
+      <li class="tareas__item">
+        <input type="checkbox" class="tareas__checkbox" id="tarea7">
+        <label for="tarea7" class="tareas__texto">Terminar formulario de contacto</label>
+      </li>
+
+      <li class="tareas__item">
+        <input type="checkbox" class="tareas__checkbox" id="tarea9">
+        <label for="tarea9" class="tareas__texto">Agregar estilos al menú</label>
+      </li>
+
+    </ul>
+    <a href="#volver" class="tareas__volver">Volver</a>
+    </div>
+  </div>
+      
 
       <div class="ejercicios" id="ejercicio5">
-        <h2>Ejercicio 5</h2>
+        <h2 class="titulo__ejercicio">Ejercicio 5</h2>
+        <div class="galeria">
+          <h2 class="galeria__titulo">Galería</h2>
+          <div class="galeria__contenedor">
+            <img src="imagen/images.jpeg" alt="Imagen 1" class="galeria__imagen">
+            <img src="imagen/arbol de cerezo.jpeg" alt="Imagen 2" class="galeria__imagen">
+            <img src="imagen/descarga.jpeg" alt="Imagen 3" class="galeria__imagen">
+          </div>
+        </div>
+        
         <a href="#volver">Volver</a>
       </div>
 
       <div class="ejercicios" id="ejercicio6">
-        <h2>Ejercicio 6</h2>
-        <a href="#volver">Volver</a>
+        <h2 class="ejercicio__titulo">Ejercicio 6</h2>
+        <div class="alerta alerta--info">
+          <p class="alerta__mensaje">📢 Esta es una notificación informativa para el usuario.</p>
+        </div>
+        <a href="#volver" class="alerta__volver">Volver</a>
       </div>
+      
 
       <div class="ejercicios" id="ejercicio7">
-        <h2>Ejercicio 7</h2>
-        <a href="#volver">Volver</a>
+        <h2 class="ejercicio__titulo">Ejercicio 7</h2>
+        <div class="tabla">
+          <h2 class="tabla__titulo">Tabla de Estudiantes</h2>
+          <table class="tabla__contenedor">
+            <tr class="tabla__fila tabla__fila--encabezado">
+              <th class="tabla__columna">Nombre</th>
+              <th class="tabla__columna">Curso</th>
+              <th class="tabla__columna">Nota</th>
+            </tr>
+            <tr class="tabla__fila">
+              <td class="tabla__dato">Laura Gómez</td>
+              <td class="tabla__dato">HTML</td>
+              <td class="tabla__dato">4.5</td>
+            </tr>
+            <tr class="tabla__fila">
+              <td class="tabla__dato">Carlos Ruiz</td>
+              <td class="tabla__dato">CSS</td>
+              <td class="tabla__dato">4.8</td>
+            </tr>
+            <tr class="tabla__fila">
+              <td class="tabla__dato">María Torres</td>
+              <td class="tabla__dato">JavaScript</td>
+              <td class="tabla__dato">4.2</td>
+            </tr>
+          </table>
+        </div>
+        <a href="#volver" class="tabla__volver">Volver</a>
       </div>
+      
       
       <div class="ejercicios" id="ejercicio8">
         <h2>Ejercicio 8</h2>
