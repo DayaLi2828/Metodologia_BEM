@@ -1,127 +1,143 @@
-*{
-  padding: 0%;
-  margin: auto;
-  box-sizing: border-box;
+/* ------- RESET GENERAL Y VARIABLES ------- */
+* {
+  padding: 0%; /* Elimina el espacio interior (padding) de todos los elementos */
+  margin: auto; /* Centra horizontalmente elementos con ancho definido */
+  box-sizing: border-box; /* Incluye padding y borde dentro del ancho total */
 }
-:root{
-  --color-cajas:#d7bde2 ;
-  --color-texto:#fff;
-  --color-titulo-caja:#7e57c2;
+
+:root {
+  --color-cajas: #d7bde2; /* Color para cajas */
+  --color-texto: #fff; /* Color principal de texto */
+  --color-titulo-caja: #7e57c2; /* Color para títulos de secciones */
 }
-body{
-  background-color:rgb(29, 8, 52);
+
+/* ------- ESTILO GENERAL DE LA PÁGINA ------- */
+body {
+  background-color: rgb(29, 8, 52); /* Fondo morado oscuro para toda la página */
 }
-.header__titulo{
-  font-size: 30px;
-  padding: 20px;
-  margin: 20px;
-  color:var(--color-titulo-caja);
-  background-color: var(--color-cajas);
-  text-align: center;
-  box-shadow: 5px 5px 10px var(--color-texto);
+
+/* ------- TÍTULO PRINCIPAL ------- */
+.header__titulo {
+  font-size: 30px; /* Tamaño del texto */
+  padding: 20px; /* Espacio interior */
+  margin: 20px; /* Espacio exterior */
+  color: var(--color-titulo-caja); /* Color del texto (título) */
+  background-color: var(--color-cajas); /* Fondo claro para contraste */
+  text-align: center; /* Texto centrado */
+  box-shadow: 5px 5px 10px var(--color-texto); /* Sombra clara para profundidad */
 }
-.nav__navegacion{
-  display: inline-block;
+
+/* ------- NAVEGACIÓN ------- */
+.nav__navegacion {
+  display: inline-block; /* Se alinea horizontalmente si hay espacio */
   font-size: 18px;
   padding: 10px;
   margin: 10px;
   text-align: left;
 }
-.nav__navegacion a{
+
+.nav__navegacion a {
   display: inline-block;
   text-align: center;
-  padding: 15px 50px;
-  background-color: #7e57c2;
-  color: var(--color-texto);
-  text-decoration: none;
-  border-radius: 10px;
+  padding: 15px 50px; /* Área clickeable más grande */
+  background-color: #7e57c2; /* Morado fuerte de fondo */
+  color: var(--color-texto); /* Texto blanco */
+  text-decoration: none; /* Quita subrayado de los enlaces */
+  border-radius: 10px; /* Bordes redondeados */
   margin-top: 10px;
 }
-.nav__navegacion a:hover{
-  background-color:var(--color-cajas);
+
+.nav__navegacion a:hover {
+  background-color: var(--color-cajas); /* Cambia color cuando el mouse pasa encima */
 }
 
-.ejercicios{
+/* ------- SECCIÓN DE EJERCICIOS ------- */
+.ejercicios {
   margin: 20px;
-  border: solid rgb(255, 255, 255) 5px;
-  background-color:var(--color-cajas);
+  border: solid rgb(255, 255, 255) 5px; /* Borde blanco alrededor */
+  background-color: var(--color-cajas); /* Fondo claro */
   padding: 30px;
-  width: 98%; 
-  height: 800px; 
+  width: 98%;
+  height: 800px;
   text-align: center;
 }
-/*estilos principales de la pagina*/
-/*ejercicio1*/
-.tarjeta{
+
+/* ------- TARJETAS DE CONTENIDO ------- */
+.tarjeta {
   margin-top: 50px;
-  background-color: var(--color-texto);
+  background-color: var(--color-texto); /* Fondo blanco para contrastar */
   padding: 30px;
   width: 30%;
-  height: auto; 
+  height: auto;
   border-radius: 20px;
   margin-bottom: 20px;
 }
-.tarjeta img{
+
+.tarjeta img {
   margin: 10px;
   margin-left: 10px;
-  border-radius: 10px;
+  border-radius: 10px; /* Bordes redondeados para la imagen */
 }
-p{
+
+/* ------- TEXTO Y BOTONES ------- */
+p {
   font-size: 18px;
   margin: 10px;
 }
-.boton{
-  background-color: #7e57c25a;
+
+.boton {
+  background-color: #7e57c25a; /* Morado semitransparente */
   border: solid black 1px;
 }
-/* .main__contenido__link{
+
+/* .main__contenido__link {
   margin-top: 30px;
 } */
 
-.main__menu{
-  background-color: #1474858a;
+/* ------- MENÚ PRINCIPAL O LATERAL ------- */
+.main__menu {
+  background-color: #1474858a; /* Verde azulado con opacidad */
   width: 30%;
   border-radius: 20px;
   margin-bottom: 20px;
   padding: 30px;
 }
-.main__titulo{
+
+.main__titulo {
   padding: 20px;
   text-align: left;
   position: relative;
 }
-h3{
+
+/* ------- TÍTULOS Y ESTILO DE TEXTOS ------- */
+h3 {
   text-align: left;
   margin-left: 30px;
   margin-top: 18px;
-  
 }
 
-.icono__casa{
+/* ------- ÍCONOS PARA SECCIONES ------- */
+.icono__casa,
+.icono__maleta,
+.icono__cohete,
+.icono__planeta,
+.icono__contacto {
   width: 20px;
 }
-.icono__maleta{
-  width: 20px;
-}
-.icono__cohete{
-  width: 20px;
-}
-.icono__planeta{
-  width: 20px;
-}
-.icono__contacto{
-  width: 20px;
-}
-.icono__menu{
+
+.icono__menu {
   width: 20px;
   display: inline-block;
   position: absolute;
   right: 15px;
 }
-.titulo__ejercicio2{
+
+/* ------- SUBTÍTULOS DE EJERCICIOS ------- */
+.titulo__ejercicio2 {
   margin: 20px;
 }
-/*formulario contacto*/
+
+/* ------- FORMULARIO DE CONTACTO ------- */
 .formulario {
   width: 300px;
   margin: 40px auto;
@@ -151,7 +167,7 @@ h3{
 .formulario__boton {
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #4CAF50; /* Verde fuerte */
   color: white;
   border: none;
   border-radius: 5px;
@@ -160,9 +176,10 @@ h3{
 }
 
 .formulario__boton:hover {
-  background-color: #45a049;
+  background-color: #45a049; /* Verde oscuro al pasar el mouse */
 }
-/*lista de tareas*/
+
+/* ------- LISTA DE TAREAS ------- */
 .tareas {
   max-width: 400px;
   margin: 40px auto;
@@ -172,9 +189,9 @@ h3{
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   font-family: sans-serif;
 }
+
 .ejercicio__titulo {
   margin-bottom: 20px;
-
 }
 
 .tareas__titulo {
@@ -184,56 +201,57 @@ h3{
 }
 
 .tareas__lista {
-  list-style: none;
+  list-style: none; /* Quita viñetas */
   padding: 0;
   margin: 0;
 }
-
+/* ----- ÍTEM DE LA LISTA DE TAREAS ----- */
 .tareas__item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  display: flex; /* Organiza los hijos en fila horizontal */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 10px; /* Espaciado interior */
+  border-bottom: 1px solid #ddd; /* Línea divisoria sutil entre ítems */
 }
 
 .tareas__checkbox {
-  margin-right: 10px;
+  margin-right: 10px; /* Espacio entre checkbox y el texto */
 }
 
 .tareas__texto {
-  font-size: 16px;
-  flex-grow: 1;
-  transition: color 0.3s, text-decoration 0.3s;
+  font-size: 16px; /* Tamaño de letra del texto de la tarea */
+  flex-grow: 1; /* Ocupa el espacio restante disponible */
+  transition: color 0.3s, text-decoration 0.3s; /* Animaciones suaves en color y subrayado */
 }
 
 .ejercicios .tareas {
-  margin: 0 auto;
-  width: 50%;
-  background-color: var(--color-texto); /* sigue siendo blanco */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  margin: 0 auto; /* Centrado horizontal */
+  width: 50%; /* Mitad del ancho de su contenedor */
+  background-color: var(--color-texto); /* Fondo blanco */
+  padding: 20px; /* Espacio interior */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2); /* Sombra sutil */
 }
 
 .tareas__titulo {
-  font-size: 20px;
-  color: black;
-  margin-bottom: 10px;
+  font-size: 20px; /* Tamaño de fuente */
+  color: black; /* Color negro */
+  margin-bottom: 10px; /* Espacio debajo */
 }
-/*galeria de imagenes*/
+
+/* ----- GALERÍA DE IMÁGENES ----- */
 .galeria {
-  width: 80%;
-  margin: 0 auto;
-  background-color: var(--color-texto);
+  width: 80%; /* Ancho de la galería */
+  margin: 0 auto; /* Centrada horizontalmente */
+  background-color: var(--color-texto); /* Fondo blanco */
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
 }
-.titulo__ejercicio{
-  margin-bottom: 20px;
 
+.titulo__ejercicio {
+  margin-bottom: 20px; /* Espacio inferior */
 }
+
 .galeria__titulo {
   text-align: center;
   font-size: 24px;
@@ -242,25 +260,24 @@ h3{
 }
 
 .galeria__contenedor {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  gap: 15px;
-  
+  display: grid; /* Distribución en cuadrícula */
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas del mismo tamaño */
+  gap: 15px; /* Espacio entre las imágenes */
 }
 
 .galeria__imagen {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
-  
+  width: 100%; /* Ocupar todo el ancho disponible */
+  height: auto; /* Altura proporcional */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Transición suave al hacer zoom */
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15); /* Sombra ligera */
 }
 
-.galeria__imagen:hover {/*sirve para que cuando le ponga el cursor enzima se aumente la imagen*/
-  transform: scale(1.05);
+.galeria__imagen:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
 }
-/*alerta de notificacion*/
+
+/* ----- ALERTAS DE MENSAJES ----- */
 .alerta {
   width: 60%;
   margin: 30px auto;
@@ -276,39 +293,40 @@ h3{
   margin: 0;
 }
 
-/* Modificadores */
+/* Modificadores: estilos según tipo de alerta */
 .alerta--info {
-  background-color: #d9edf7;
-  border-left: 6px solid #31708f;
+  background-color: #d9edf7; /* Azul claro */
+  border-left: 6px solid #31708f; /* Borde azul oscuro */
 }
 
 .alerta--exito {
-  background-color: #dff0d8;
-  border-left: 6px solid #3c763d;
+  background-color: #dff0d8; /* Verde claro */
+  border-left: 6px solid #3c763d; /* Verde intenso */
 }
 
 .alerta--advertencia {
-  background-color: #fcf8e3;
-  border-left: 6px solid #8a6d3b;
+  background-color: #fcf8e3; /* Amarillo claro */
+  border-left: 6px solid #8a6d3b; /* Marrón */
 }
 
 .alerta--error {
-  background-color: #f2dede;
-  border-left: 6px solid #a94442;
+  background-color: #f2dede; /* Rojo claro */
+  border-left: 6px solid #a94442; /* Rojo oscuro */
 }
 
 .alerta__volver {
-  display: block;
+  display: block; /* Ocupa toda la línea */
   text-align: center;
   margin-top: 20px;
   color: purple;
   text-decoration: underline;
 }
-/*tabla de datos*/
+
+/* ----- TABLA DE DATOS ----- */
 .tabla {
   width: 80%;
   margin: 0 auto;
-  background-color: var(--color-texto);
+  background-color: var(--color-texto); /* Fondo blanco */
   padding: 20px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -323,19 +341,19 @@ h3{
 
 .tabla__contenedor {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse; /* Une bordes de celdas */
 }
 
 .tabla__columna {
-  background-color: #7e57c2;
-  color: #fff;
+  background-color: #7e57c2; /* Morado fuerte */
+  color: #fff; /* Texto blanco */
   padding: 10px;
   border: 1px solid #ddd;
   text-align: left;
 }
 
 .tabla__fila--encabezado {
-  font-weight: bold;
+  font-weight: bold; /* Negrita */
 }
 
 .tabla__dato {
@@ -344,8 +362,6 @@ h3{
   color: #000;
 }
 
-
-
 .tabla__volver {
   display: block;
   text-align: center;
@@ -353,7 +369,8 @@ h3{
   color: purple;
   text-decoration: underline;
 }
-/*pie de pagina*/
+
+/* ----- PIE DE PÁGINA ----- */
 .footer {
   background-color: #7e57c2;
   padding: 20px;
@@ -365,7 +382,7 @@ h3{
 
 .footer__contenido {
   text-align: center;
-  color: var(--color-texto);
+  color: var(--color-texto); /* Texto blanco */
 }
 
 .footer__texto {
@@ -374,48 +391,49 @@ h3{
 }
 
 .footer__volver {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-  color: purple;
-  text-decoration: underline;
+  display: block; /* El enlace ocupa toda la línea horizontal */
+  text-align: center; /* Centra el texto del enlace */
+  margin-top: 20px; /* Espacio superior entre el enlace y lo anterior */
+  color: purple; /* Color púrpura para el texto */
+  text-decoration: underline; /* Subraya el texto para mostrar que es un enlace */
 }
-/*pestañas tab*/
+
+/* pestañas tab */
 .pestañas {
-  width: 80%;
-  margin: 0 auto;
-  background-color: var(--color-texto);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
-  font-family: sans-serif;
+  width: 80%; /* Ancho del contenedor de pestañas */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  background-color: var(--color-texto); /* Fondo blanco utilizando variable */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2); /* Sombra sutil para dar profundidad */
+  font-family: sans-serif; /* Fuente moderna y limpia */
 }
 
 .pestañas__menu {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  display: flex; /* Coloca las pestañas en fila horizontal */
+  justify-content: center; /* Centra las pestañas dentro del menú */
+  margin-bottom: 20px; /* Espacio debajo del menú */
 }
 
 .pestañas__label {
-  padding: 10px 20px;
-  background-color: #ccc;
-  margin-right: 5px;
-  border-radius: 5px 5px 0 0;
-  font-weight: bold;
-  color: black;
+  padding: 10px 20px; /* Espacio interno horizontal y vertical */
+  background-color: #ccc; /* Fondo gris claro */
+  margin-right: 5px; /* Espacio entre pestañas */
+  border-radius: 5px 5px 0 0; /* Bordes superiores redondeados */
+  font-weight: bold; /* Letras en negrita */
+  color: black; /* Texto negro */
 }
 
 .pestañas__label--activa {
-  background-color: #7e57c2;
-  color: white;
+  background-color: #7e57c2; /* Fondo morado para pestaña activa */
+  color: white; /* Texto blanco para mejor contraste */
 }
 
 .pestañas__contenido {
-  padding: 15px;
-  border-radius: 0 0 10px 10px;
-  background-color: #f4f4f4;
-  margin-bottom: 10px;
+  padding: 15px; /* Espaciado interno del contenido */
+  border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */
+  background-color: #f4f4f4; /* Fondo gris muy claro */
+  margin-bottom: 10px; /* Espacio inferior respecto a otros elementos */
 }
 
 .pestañas__volver {
@@ -425,14 +443,15 @@ h3{
   color: purple;
   text-decoration: underline;
 }
-/*selector de categorias*/
+
+/* selector de categorias */
 .categorias {
   width: 300px;
   margin: 40px auto;
-  background-color: var(--color-texto);
+  background-color: var(--color-texto); /* Fondo blanco */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2); /* Sombra sutil */
   font-family: sans-serif;
 }
 
@@ -447,8 +466,8 @@ h3{
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
+  border-radius: 5px; /* Bordes redondeados para el select */
+  border: 1px solid #aaa; /* Borde gris claro */
 }
 
 .categorias__volver {
@@ -458,11 +477,12 @@ h3{
   color: purple;
   text-decoration: underline;
 }
-/*sistema de calificacioones*/
+
+/* sistema de calificaciones */
 .calificacion {
   width: 300px;
   margin: 40px auto;
-  background-color: var(--color-texto);
+  background-color: var(--color-texto); /* Fondo blanco */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -477,21 +497,21 @@ h3{
 }
 
 .calificacion__estrellas {
-  font-size: 30px;
-  color: #ffd700;
+  font-size: 30px; /* Tamaño grande para las estrellas */
+  color: #ffd700; /* Amarillo dorado */
   margin-bottom: 10px;
 }
 
 .calificacion__estrella {
-  padding: 5px;
+  padding: 5px; /* Espacio entre estrellas si se usan como botones o íconos */
 }
 
 .calificacion__comentario {
-  margin: 15px 0;
+  margin: 15px 0; /* Espaciado superior e inferior */
 }
 
 .calificacion__etiqueta {
-  display: block;
+  display: block; /* Se comporta como bloque para ocupar toda la línea */
   font-size: 14px;
   margin-bottom: 5px;
   color: #000;
@@ -510,7 +530,7 @@ h3{
 .calificacion__boton {
   margin-top: 10px;
   padding: 8px 20px;
-  background-color: #7e57c2;
+  background-color: #7e57c2; /* Morado */
   color: white;
   border: none;
   border-radius: 5px;
@@ -518,7 +538,7 @@ h3{
 }
 
 .calificacion__boton:hover {
-  background-color: #5e3ea8;
+  background-color: #5e3ea8; /* Morado más oscuro al pasar el mouse */
 }
 
 .calificacion__volver {
@@ -528,12 +548,13 @@ h3{
   text-decoration: underline;
   text-align: center;
 }
-/*barra sidebal*/
+
+/* barra sidebar */
 .barra-lateral {
   float: left;
-  width: 150px;           /* Más ancha */
-  height: 350px;          /* Más alta */
-  background-color: #e0d6f5;
+  width: 150px; /* Ancho de la barra lateral */
+  height: 350px; /* Altura de la barra */
+  background-color: #e0d6f5; /* Lila suave */
   padding: 20px;
   border-radius: 12px;
   margin-right: 25px;
@@ -547,7 +568,7 @@ h3{
 }
 
 .barra-lateral__lista {
-  list-style: none;
+  list-style: none; /* Elimina viñetas */
   padding: 0;
   margin: 0;
 }
@@ -557,12 +578,12 @@ h3{
 }
 
 .barra-lateral__item a {
-  text-decoration: none;
-  color: #333;
+  text-decoration: none; /* Quita subrayado */
+  color: #333; /* Gris oscuro */
 }
 
 .contenido-lateral {
-  width: calc(100% - 330px);  /* Ajuste al nuevo ancho + margen */
+  width: calc(100% - 330px); /* Ancho restante considerando la barra lateral */
   float: left;
 }
 
@@ -577,12 +598,14 @@ h3{
   margin-top: 40px;
   color: purple;
   text-decoration: underline;
-}/*resumen de carrito*/
+}
+
+/* resumen de carrito */
 .carrito {
   width: 320px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff3e0;
+  background-color: #fff3e0; /* Naranja suave */
   border-radius: 12px;
   box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
   font-family: sans-serif;
@@ -634,9 +657,10 @@ h3{
   color: purple;
   text-decoration: underline;
 }
-/*publicacion de blog*/
+
+/* publicación de blog */
 .blog {
-  background-color: #f0f8ff;
+  background-color: #f0f8ff; /* Azul muy claro */
   padding: 20px;
   border-radius: 12px;
   width: 80%;
@@ -653,7 +677,7 @@ h3{
 }
 
 .blog__autor {
-  font-style: italic;
+  font-style: italic; /* Cursiva para el nombre del autor */
   color: #555;
   margin-bottom: 15px;
 }
@@ -662,14 +686,10 @@ h3{
   font-size: 16px;
   color: #111;
   margin-bottom: 12px;
-  line-height: 1.6;
+  line-height: 1.6; /* Espaciado entre líneas para mejor lectura */
 }
 
 .enlace__volver {
   display: block;
   text-align: center;
-  margin-top: 25px;
-  color: purple;
-  text-decoration: underline;
 }
-
